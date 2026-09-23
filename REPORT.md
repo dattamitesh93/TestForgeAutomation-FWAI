@@ -36,7 +36,10 @@ Look inspected and corrected, not assumed: DONE
   (footer background set to the logo's own #1F2326) and the mobile hero crop that cut the
   presenter's face away (`object-position: 30% 42%`). Both re-rendered and re-read.
 
-First GitHub repository for this build: see the repository line at the bottom of this report.
+First GitHub repository for this build: DONE — https://github.com/dattamitesh93/TestForgeAutomation-FWAI (public, branch `main`)
+  evidence: `gh repo create TestForgeAutomation-FWAI --public --source . --remote origin --push` printed the URL;
+  `gh repo view ... --json url,visibility,defaultBranchRef` -> {"url":"https://github.com/dattamitesh93/TestForgeAutomation-FWAI","visibility":"PUBLIC","defaultBranchRef":{"name":"main"}};
+  `git ls-remote origin -h refs/heads/main` -> 15a9bfadd9c7dcfae4ac24b82e01138137b269b1; `git status --short` -> clean.
 
 ## What broke and how I fixed it
 
