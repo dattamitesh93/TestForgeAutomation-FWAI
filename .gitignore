@@ -1,0 +1,6 @@
+# ignore local env and OS cruft
+.env
+.env.*
+Thumbs.db
+desktop.ini
+.DS_Store
